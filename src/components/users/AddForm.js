@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import Classes from './AddForm.module.css'
 import Button from '../UI/Button'
 import Card from '../UI/Card'
-import ErrorModal from '../UI/Error'
+import ErrorModal from '../UI/ErrorModal'
+import Wrapper from '../Helper/Wrapper'
 
 
 function AddForm(props) {
@@ -58,7 +59,8 @@ function AddForm(props) {
     }
 
   return (
-    <div>
+    // this wrapper and card compoent pass as an props jsx element into the wrapper component
+    <Wrapper>
        {error && (
         <ErrorModal
           title={error.title}
@@ -75,7 +77,7 @@ function AddForm(props) {
           <Button type='submit'>Add User</Button>
         </form>
       </Card> 
-    </div>
+    </Wrapper>
   )
 }
 

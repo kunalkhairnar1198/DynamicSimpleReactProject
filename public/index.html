@@ -28,7 +28,15 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <!-- this two backdrop and overlay-root is used for the creating Error-modal outside the dom tree render the ErrorModal component outside the main root real-dom tree looking its the browser like popup  -->
+   <!-- These elements are commonly used in React applications to implement modal dialogs or overlays that appear outside the regular DOM tree, often on top of the main application content. -->
+    <!-- it represents the such file when click btn then render top of the main-root component  -->
+    <!-- react modals are used for hold kind for modals-root such like profileoverlay, sidedrawers an so on  -->
+    <div id="backdrop-root"></div>
+    <div id="overlay-root"></div> 
+    
     <div id="root"></div>
+    
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
