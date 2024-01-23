@@ -22,11 +22,10 @@ function App() {
   }
   
   return (
-    <div >
-      <h1 style={{ textAlign: 'center', fontStyle: 'lighter' }}>Time to Make Project</h1>
+    <React.Fragment>
       <AddForm onAddData = {receivedFormData}/>
       <Userlist items={userList}/>
-    </div>
+    </React.Fragment>
   );
 }
 
