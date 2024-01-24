@@ -5,7 +5,7 @@ import Userlist from './components/users/Userlist';
 
 function App() {
   const [userList, setUserList] = useState([
-    {id:'1',username:'kunal', age:'26'}
+    {id:'1',username:'kunal', age:'26', college:'K.A.A.N.M.S.College Satana'}
   ])
  
 

@@ -9,7 +9,7 @@ function Userlist(props) {
             {props.items.map((ele) => (
             <li key={ele.id}>
               {/* concatinate list of element using string interpolation */}
-              {`My Name is:${ele.username} And Age is: ${ele.age}`}
+              {`My Name is:${ele.username} And Age is: ${ele.age} collage Name is ${ele.college}`}
             </li>
             ))}
         </ul>
